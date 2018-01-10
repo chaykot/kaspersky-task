@@ -51,7 +51,7 @@ public class KasperskyDataDrivenTest2 extends BaseTestDataDriven {
         MainMenuForm mainMenuForm = new MainMenuForm();
         mainMenuForm.clickMenuItem(MainMenuItems.DOWNLOADS);
 
-        LogStep("Click Download");
+        /*LogStep("Click Download");
         DownloadsForm downloadsForm = new DownloadsForm();
         downloadsForm.downloadProduct(os, product);
 
@@ -69,7 +69,7 @@ public class KasperskyDataDrivenTest2 extends BaseTestDataDriven {
 
         LogStep("Check Mail");
         String messageContent = new MailUtils(username, password).getMessageContent(MAIL_FOLDER, String.format(messageSubject, product));
-        Assert.assertTrue(decodeMail(messageContent).contains(downloadHref), "Mail does not contain correct link for downloading");
+        Assert.assertTrue(decodeMail(messageContent).contains(downloadHref), "Mail does not contain correct link for downloading");*/
     }
 
     @BeforeMethod

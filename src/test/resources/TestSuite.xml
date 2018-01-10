@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
+<suite name="Demo Test Plan" verbose="1" parallel="tests" thread-count="2">
+	<test name="Kaspersky Tests" preserve-order="true">
+		<classes>
+			<class name="kaspersky.tests.KasperskyDataDrivenTest" />
+        </classes>
+	</test>
+	<test name="Kaspersky Tests 2" preserve-order="true">
+		<classes>
+			<class name="kaspersky.tests.KasperskyDataDrivenTest2" />
+		</classes>
+	</test>
+</suite>

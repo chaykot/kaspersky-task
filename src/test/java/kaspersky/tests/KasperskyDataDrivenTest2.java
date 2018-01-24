@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 import webdriver.BaseTestDataDriven;
 import webdriver.utils.MailUtils;
 
@@ -29,6 +30,7 @@ public class KasperskyDataDrivenTest2 extends BaseTestDataDriven {
     }
 
     @Test(dataProvider = "DataProv")
+    @Title("Kaspersky tests 2")
     public void readParams(String username, String password, String os, String product) throws Throwable {
         this.username = username;
         this.password = password;
